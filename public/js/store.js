@@ -3,10 +3,10 @@
 const KEY = 'sav-settings-v1';
 
 const DEFAULTS = {
-  pattern: 'cruise',   // cruise | step | breathe
-  speed: 130,          // px/s for cruise & breathe
+  pattern: 'breathe',  // cruise | step | breathe
+  speed: 240,          // px/s for cruise & breathe
   dwell: 4,            // seconds per image for step
-  ease: 1.2,           // seconds of glide between steps
+  ease: 1.5,           // seconds of glide between steps
   loop: 'restart',     // stop | restart | bounce
   railDir: 'vertical', // vertical | horizontal (side-by-side, for portrait sets)
   railWidthMode: 'auto', // auto: fit the collection's typical image shape
