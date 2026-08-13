@@ -36,7 +36,13 @@
     "win": {
       "target": [
         "nsis"
-      ]
+      ],
+      "azureSignOptions": {
+        "publisherName": "Jianhao Zhang",
+        "endpoint": "https://wus3.codesigning.azure.net",
+        "codeSigningAccountName": "openhivesigning",
+        "certificateProfileName": "openhive"
+      }
     },
     "nsis": {
       "oneClick": false,
