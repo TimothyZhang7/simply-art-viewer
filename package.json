@@ -1,6 +1,6 @@
 {
   "name": "simply-art-viewer",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Fluid local art gallery — scans folders into collections; sleek click-zone viewer and smooth rail mode.",
   "type": "module",
   "main": "desktop/main.js",
@@ -34,7 +34,9 @@
       "node_modules/@img/**"
     ],
     "win": {
-      "target": ["nsis"]
+      "target": [
+        "nsis"
+      ]
     },
     "nsis": {
       "oneClick": false,
