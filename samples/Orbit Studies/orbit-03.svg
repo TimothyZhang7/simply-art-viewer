@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400">
+<style>@keyframes spin { to { transform: rotate(360deg) } }
+.g0{animation:spin 14s linear infinite;transform-origin:700px 700px}
+.g1{animation:spin 20s linear infinite reverse;transform-origin:700px 700px}
+.g2{animation:spin 26s linear infinite;transform-origin:700px 700px}
+.g3{animation:spin 32s linear infinite reverse;transform-origin:700px 700px}
+.g4{animation:spin 38s linear infinite;transform-origin:700px 700px}</style>
+<rect width="1400" height="1400" fill="#120f14"/>
+
+<g class="g0"><circle cx="700" cy="700" r="117.6" fill="none" stroke="#f5b8c4" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="4 10"/><circle cx="817.6" cy="700" r="28" fill="#f5b8c4"/><circle cx="700" cy="582.4" r="12.6" fill="#f5b8c4" fill-opacity="0.55"/></g>
+<g class="g1"><circle cx="700" cy="700" r="235.2" fill="none" stroke="#c9a7f5" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="7 14"/><circle cx="935.2" cy="700" r="24" fill="#c9a7f5"/><circle cx="700" cy="464.8" r="10.8" fill="#c9a7f5" fill-opacity="0.55"/></g>
+<g class="g2"><circle cx="700" cy="700" r="352.8" fill="none" stroke="#f1dec0" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="10 18"/><circle cx="1052.8" cy="700" r="20" fill="#f1dec0"/><circle cx="700" cy="347.2" r="9.0" fill="#f1dec0" fill-opacity="0.55"/></g>
+<g class="g3"><circle cx="700" cy="700" r="470.4" fill="none" stroke="#f5b8c4" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="13 22"/><circle cx="1170.4" cy="700" r="16" fill="#f5b8c4"/><circle cx="700" cy="229.6" r="7.2" fill="#f5b8c4" fill-opacity="0.55"/></g>
+<g class="g4"><circle cx="700" cy="700" r="588.0" fill="none" stroke="#c9a7f5" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="16 26"/><circle cx="1288.0" cy="700" r="12" fill="#c9a7f5"/><circle cx="700" cy="112.0" r="5.4" fill="#c9a7f5" fill-opacity="0.55"/></g>
+<circle cx="700" cy="700" r="64.8" fill="#f1dec0"/>
+</svg>

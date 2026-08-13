@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1550" viewBox="0 0 1250 1550">
+<style>@keyframes drift0 { to { transform: translateX(-625px) } }
+.w0{animation:drift0 12s linear infinite}
+@keyframes drift1 { to { transform: translateX(-417px) } }
+.w1{animation:drift1 16s linear infinite}
+@keyframes drift2 { to { transform: translateX(-313px) } }
+.w2{animation:drift2 20s linear infinite}
+@keyframes drift3 { to { transform: translateX(-250px) } }
+.w3{animation:drift3 24s linear infinite}
+@keyframes drift4 { to { transform: translateX(-208px) } }
+.w4{animation:drift4 28s linear infinite}
+</style>
+<rect width="1250" height="1550" fill="#0b0c0f"/>
+<g class="w0"><path d="M 0 543 q 156.25 -46 312.5 0 t 312.5 0 t 312.5 0 t 312.5 0 t 312.5 0 t 312.5 0 t 312.5 0 t 312.5 0 t 312.5 0 L 2500 1550 L 0 1550 Z" fill="#f1dec0" fill-opacity="0.15"/></g>
+<g class="w1"><path d="M 0 713 q 104.25 -64 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 t 208.5 0 L 2500 1550 L 0 1550 Z" fill="#8ea8ff" fill-opacity="0.18"/></g>
+<g class="w2"><path d="M 0 884 q 78.25 -82 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 t 156.5 0 L 2500 1550 L 0 1550 Z" fill="#ff8f6b" fill-opacity="0.21"/></g>
+<g class="w3"><path d="M 0 1054 q 62.5 -100 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 t 125 0 L 2500 1550 L 0 1550 Z" fill="#f1dec0" fill-opacity="0.23"/></g>
+<g class="w4"><path d="M 0 1225 q 52 -118 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 t 104 0 L 2500 1550 L 0 1550 Z" fill="#8ea8ff" fill-opacity="0.26"/></g>
+
+</svg>

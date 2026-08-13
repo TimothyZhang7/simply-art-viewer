@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<style>@keyframes fall { to { transform: translate(-420px, 2240px) } }
+.m0{animation:fall 4.9s linear 0.0s infinite}
+.m1{animation:fall 6.2s linear -0.7s infinite}
+.m2{animation:fall 3.5s linear -1.4s infinite}
+.m3{animation:fall 4.8s linear -2.1s infinite}
+.m4{animation:fall 6.1s linear -2.8s infinite}
+.m5{animation:fall 7.4s linear -3.5s infinite}
+.m6{animation:fall 4.7s linear -4.2s infinite}
+.m7{animation:fall 6.0s linear -4.9s infinite}
+.m8{animation:fall 7.3s linear -5.6s infinite}
+.m9{animation:fall 4.6s linear -6.3s infinite}
+.m10{animation:fall 5.9s linear -7.0s infinite}
+.m11{animation:fall 7.2s linear -7.7s infinite}
+.m12{animation:fall 4.5s linear -8.4s infinite}
+.m13{animation:fall 5.8s linear -9.1s infinite}
+.m14{animation:fall 7.1s linear -9.8s infinite}
+.m15{animation:fall 4.4s linear -10.5s infinite}
+.m16{animation:fall 5.7s linear -11.2s infinite}
+.m17{animation:fall 7.0s linear -11.9s infinite}
+.m18{animation:fall 4.3s linear -12.6s infinite}
+.m19{animation:fall 5.6s linear -13.3s infinite}
+</style>
+<rect width="1200" height="1600" fill="#101318"/>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101318"/><stop offset="1" stop-color="#8ea8ff" stop-opacity="0.16"/></linearGradient></defs>
+<rect width="1200" height="1600" fill="url(#sky)"/><line class="m0" x1="456" y1="0" x2="477" y2="-82" stroke="#ffd166" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m1" x1="1198" y1="-120" x2="1228" y2="-239" stroke="#8ea8ff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m2" x1="559" y1="-240" x2="598" y2="-396" stroke="#ef7a85" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m3" x1="1301" y1="-360" x2="1349" y2="-553" stroke="#ffd166" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m4" x1="662" y1="-480" x2="685" y2="-570" stroke="#8ea8ff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m5" x1="24" y1="0" x2="56" y2="-127" stroke="#ef7a85" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m6" x1="766" y1="-120" x2="807" y2="-284" stroke="#ffd166" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m7" x1="127" y1="-240" x2="142" y2="-301" stroke="#8ea8ff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m8" x1="869" y1="-360" x2="894" y2="-458" stroke="#ef7a85" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m9" x1="230" y1="-480" x2="264" y2="-615" stroke="#ffd166" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m10" x1="972" y1="0" x2="1015" y2="-172" stroke="#8ea8ff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m11" x1="334" y1="-120" x2="351" y2="-189" stroke="#ef7a85" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m12" x1="1075" y1="-240" x2="1102" y2="-346" stroke="#ffd166" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m13" x1="437" y1="-360" x2="473" y2="-503" stroke="#8ea8ff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m14" x1="1178" y1="-480" x2="1223" y2="-660" stroke="#ef7a85" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m15" x1="540" y1="0" x2="559" y2="-77" stroke="#ffd166" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m16" x1="1282" y1="-120" x2="1311" y2="-234" stroke="#8ea8ff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m17" x1="643" y1="-240" x2="681" y2="-391" stroke="#ef7a85" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m18" x1="5" y1="-360" x2="52" y2="-548" stroke="#ffd166" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m19" x1="746" y1="-480" x2="767" y2="-565" stroke="#8ea8ff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+
+</svg>

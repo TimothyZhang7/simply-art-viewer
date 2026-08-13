@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1550" viewBox="0 0 1250 1550">
+<style>@keyframes fall { to { transform: translate(-438px, 2170px) } }
+.m0{animation:fall 4.2s linear 0.0s infinite}
+.m1{animation:fall 5.5s linear -0.7s infinite}
+.m2{animation:fall 6.8s linear -1.4s infinite}
+.m3{animation:fall 4.1s linear -2.1s infinite}
+.m4{animation:fall 5.4s linear -2.8s infinite}
+.m5{animation:fall 6.7s linear -3.5s infinite}
+.m6{animation:fall 4.0s linear -4.2s infinite}
+.m7{animation:fall 5.3s linear -4.9s infinite}
+.m8{animation:fall 6.6s linear -5.6s infinite}
+.m9{animation:fall 3.9s linear -6.3s infinite}
+.m10{animation:fall 5.2s linear -7.0s infinite}
+.m11{animation:fall 6.5s linear -7.7s infinite}
+.m12{animation:fall 3.8s linear -8.4s infinite}
+.m13{animation:fall 5.1s linear -9.1s infinite}
+.m14{animation:fall 6.4s linear -9.8s infinite}
+.m15{animation:fall 3.7s linear -10.5s infinite}
+</style>
+<rect width="1250" height="1550" fill="#0a1210"/>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a1210"/><stop offset="1" stop-color="#e6d8a8" stop-opacity="0.16"/></linearGradient></defs>
+<rect width="1250" height="1550" fill="url(#sky)"/><line class="m0" x1="238" y1="0" x2="256" y2="-71" stroke="#a8e6a1" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m1" x1="1010" y1="-120" x2="1037" y2="-228" stroke="#e6d8a8" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m2" x1="345" y1="-240" x2="381" y2="-385" stroke="#79c2b8" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m3" x1="1118" y1="-360" x2="1164" y2="-542" stroke="#a8e6a1" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m4" x1="453" y1="-480" x2="473" y2="-559" stroke="#e6d8a8" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m5" x1="1225" y1="0" x2="1254" y2="-116" stroke="#79c2b8" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m6" x1="560" y1="-120" x2="598" y2="-273" stroke="#a8e6a1" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m7" x1="1333" y1="-240" x2="1381" y2="-430" stroke="#e6d8a8" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m8" x1="668" y1="-360" x2="690" y2="-447" stroke="#79c2b8" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m9" x1="3" y1="-480" x2="34" y2="-604" stroke="#a8e6a1" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m10" x1="775" y1="0" x2="815" y2="-161" stroke="#e6d8a8" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m11" x1="110" y1="-120" x2="160" y2="-318" stroke="#79c2b8" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m12" x1="883" y1="-240" x2="907" y2="-335" stroke="#a8e6a1" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+<line class="m13" x1="218" y1="-360" x2="251" y2="-492" stroke="#e6d8a8" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<line class="m14" x1="990" y1="-480" x2="1032" y2="-649" stroke="#79c2b8" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+<line class="m15" x1="325" y1="0" x2="342" y2="-66" stroke="#a8e6a1" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

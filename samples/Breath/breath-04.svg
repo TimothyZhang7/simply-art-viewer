@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1550" viewBox="0 0 1250 1550">
+<style>@keyframes br { from { transform: scale(0.82); opacity: 0.55 } to { transform: scale(1.14); opacity: 0.95 } }
+.b0{animation:br 5s ease-in-out 0.0s infinite alternate;transform-origin:543px 904px}
+.b1{animation:br 7s ease-in-out -1.7s infinite alternate;transform-origin:256px 291px}
+.b2{animation:br 9s ease-in-out -3.4s infinite alternate;transform-origin:719px 670px}
+.b3{animation:br 11s ease-in-out -5.1s infinite alternate;transform-origin:433px 1049px}
+.b4{animation:br 5s ease-in-out -6.8s infinite alternate;transform-origin:897px 436px}
+</style>
+<rect width="1250" height="1550" fill="#0e1016"/>
+<defs><radialGradient id="g0"><stop offset="0%" stop-color="#9ee6d0" stop-opacity="0.9"/><stop offset="100%" stop-color="#9ee6d0" stop-opacity="0"/></radialGradient><radialGradient id="g1"><stop offset="0%" stop-color="#f1dec0" stop-opacity="0.9"/><stop offset="100%" stop-color="#f1dec0" stop-opacity="0"/></radialGradient><radialGradient id="g2"><stop offset="0%" stop-color="#7f9cf5" stop-opacity="0.9"/><stop offset="100%" stop-color="#7f9cf5" stop-opacity="0"/></radialGradient><radialGradient id="g3"><stop offset="0%" stop-color="#9ee6d0" stop-opacity="0.9"/><stop offset="100%" stop-color="#9ee6d0" stop-opacity="0"/></radialGradient><radialGradient id="g4"><stop offset="0%" stop-color="#f1dec0" stop-opacity="0.9"/><stop offset="100%" stop-color="#f1dec0" stop-opacity="0"/></radialGradient></defs>
+<circle class="b0" cx="543" cy="904" r="200" fill="url(#g0)"/>
+<circle class="b1" cx="256" cy="291" r="313" fill="url(#g1)"/>
+<circle class="b2" cx="719" cy="670" r="425" fill="url(#g2)"/>
+<circle class="b3" cx="433" cy="1049" r="200" fill="url(#g3)"/>
+<circle class="b4" cx="897" cy="436" r="313" fill="url(#g4)"/>
+
+</svg>

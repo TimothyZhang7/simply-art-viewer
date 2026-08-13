@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1500" viewBox="0 0 1100 1500">
+<style>@keyframes drift0 { to { transform: translateX(-550px) } }
+.w0{animation:drift0 15s linear infinite}
+@keyframes drift1 { to { transform: translateX(-367px) } }
+.w1{animation:drift1 19s linear infinite}
+@keyframes drift2 { to { transform: translateX(-275px) } }
+.w2{animation:drift2 23s linear infinite}
+@keyframes drift3 { to { transform: translateX(-220px) } }
+.w3{animation:drift3 27s linear infinite}
+@keyframes drift4 { to { transform: translateX(-183px) } }
+.w4{animation:drift4 31s linear infinite}
+@keyframes drift5 { to { transform: translateX(-157px) } }
+.w5{animation:drift5 35s linear infinite}
+</style>
+<rect width="1100" height="1500" fill="#101318"/>
+<g class="w0"><path d="M 0 525 q 137.5 -38 275 0 t 275 0 t 275 0 t 275 0 t 275 0 t 275 0 t 275 0 t 275 0 t 275 0 L 2200 1500 L 0 1500 Z" fill="#ffd166" fill-opacity="0.15"/></g>
+<g class="w1"><path d="M 0 663 q 91.75 -56 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 t 183.5 0 L 2200 1500 L 0 1500 Z" fill="#8ea8ff" fill-opacity="0.17"/></g>
+<g class="w2"><path d="M 0 800 q 68.75 -74 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 t 137.5 0 L 2200 1500 L 0 1500 Z" fill="#ef7a85" fill-opacity="0.20"/></g>
+<g class="w3"><path d="M 0 938 q 55 -92 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 t 110 0 L 2200 1500 L 0 1500 Z" fill="#ffd166" fill-opacity="0.22"/></g>
+<g class="w4"><path d="M 0 1075 q 45.75 -110 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 t 91.5 0 L 2200 1500 L 0 1500 Z" fill="#8ea8ff" fill-opacity="0.24"/></g>
+<g class="w5"><path d="M 0 1213 q 39.25 -128 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 t 78.5 0 L 2200 1500 L 0 1500 Z" fill="#ef7a85" fill-opacity="0.27"/></g>
+
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<style>@keyframes br { from { transform: scale(0.82); opacity: 0.55 } to { transform: scale(1.14); opacity: 0.95 } }
+.b0{animation:br 5s ease-in-out 0.0s infinite alternate;transform-origin:570px 404px}
+.b1{animation:br 7s ease-in-out -1.7s infinite alternate;transform-origin:1163px 624px}
+.b2{animation:br 9s ease-in-out -3.4s infinite alternate;transform-origin:796px 268px}
+.b3{animation:br 11s ease-in-out -5.1s infinite alternate;transform-origin:429px 488px}
+.b4{animation:br 5s ease-in-out -6.8s infinite alternate;transform-origin:1023px 708px}
+.b5{animation:br 7s ease-in-out -8.5s infinite alternate;transform-origin:656px 352px}
+.b6{animation:br 9s ease-in-out -10.2s infinite alternate;transform-origin:1249px 572px}
+</style>
+<rect width="1600" height="900" fill="#0b0c0f"/>
+<defs><radialGradient id="g0"><stop offset="0%" stop-color="#f1dec0" stop-opacity="0.9"/><stop offset="100%" stop-color="#f1dec0" stop-opacity="0"/></radialGradient><radialGradient id="g1"><stop offset="0%" stop-color="#8ea8ff" stop-opacity="0.9"/><stop offset="100%" stop-color="#8ea8ff" stop-opacity="0"/></radialGradient><radialGradient id="g2"><stop offset="0%" stop-color="#ff8f6b" stop-opacity="0.9"/><stop offset="100%" stop-color="#ff8f6b" stop-opacity="0"/></radialGradient><radialGradient id="g3"><stop offset="0%" stop-color="#f1dec0" stop-opacity="0.9"/><stop offset="100%" stop-color="#f1dec0" stop-opacity="0"/></radialGradient><radialGradient id="g4"><stop offset="0%" stop-color="#8ea8ff" stop-opacity="0.9"/><stop offset="100%" stop-color="#8ea8ff" stop-opacity="0"/></radialGradient><radialGradient id="g5"><stop offset="0%" stop-color="#ff8f6b" stop-opacity="0.9"/><stop offset="100%" stop-color="#ff8f6b" stop-opacity="0"/></radialGradient><radialGradient id="g6"><stop offset="0%" stop-color="#f1dec0" stop-opacity="0.9"/><stop offset="100%" stop-color="#f1dec0" stop-opacity="0"/></radialGradient></defs>
+<circle class="b0" cx="570" cy="404" r="306" fill="url(#g0)"/>
+<circle class="b1" cx="1163" cy="624" r="144" fill="url(#g1)"/>
+<circle class="b2" cx="796" cy="268" r="225" fill="url(#g2)"/>
+<circle class="b3" cx="429" cy="488" r="306" fill="url(#g3)"/>
+<circle class="b4" cx="1023" cy="708" r="144" fill="url(#g4)"/>
+<circle class="b5" cx="656" cy="352" r="225" fill="url(#g5)"/>
+<circle class="b6" cx="1249" cy="572" r="306" fill="url(#g6)"/>
+
+</svg>

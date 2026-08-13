@@ -228,8 +228,8 @@ export function viewerView(app, colId, startIndex) {
     const fh = el('div', { class: 'v-firsthint' },
       el('div', { class: 'fh fh-left', html: icons.chevronLeft + '<span>Previous</span>' }),
       el('div', { class: 'fh fh-right', html: '<span>Next</span>' + icons.chevronRight }),
-      el('div', { class: 'fh fh-top', html: icons.chevronUp + '<span>Back to collection</span>' }),
-      el('div', { class: 'fh fh-bottom', html: icons.chevronDown + '<span>Setup</span>' }),
+      el('div', { class: 'fh fh-top', html: icons.chevronUp + `<span>${backLabel}</span>` }),
+      el('div', { class: 'fh fh-bottom', html: icons.chevronDown + '<span>Configuration</span>' }),
     );
     viewer.append(fh);
     requestAnimationFrame(() => fh.classList.add('on'));

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400">
+<style>@keyframes drift0 { to { transform: translateX(-467px) } }
+.w0{animation:drift0 12s linear infinite}
+@keyframes drift1 { to { transform: translateX(-350px) } }
+.w1{animation:drift1 16s linear infinite}
+@keyframes drift2 { to { transform: translateX(-280px) } }
+.w2{animation:drift2 20s linear infinite}
+@keyframes drift3 { to { transform: translateX(-233px) } }
+.w3{animation:drift3 24s linear infinite}
+@keyframes drift4 { to { transform: translateX(-200px) } }
+.w4{animation:drift4 28s linear infinite}
+</style>
+<rect width="1400" height="1400" fill="#0a1210"/>
+<g class="w0"><path d="M 0 490 q 116.75 -34 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 t 233.5 0 L 2800 1400 L 0 1400 Z" fill="#a8e6a1" fill-opacity="0.15"/></g>
+<g class="w1"><path d="M 0 644 q 87.5 -52 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 t 175 0 L 2800 1400 L 0 1400 Z" fill="#e6d8a8" fill-opacity="0.18"/></g>
+<g class="w2"><path d="M 0 798 q 70 -70 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0 L 2800 1400 L 0 1400 Z" fill="#79c2b8" fill-opacity="0.21"/></g>
+<g class="w3"><path d="M 0 952 q 58.25 -88 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 t 116.5 0 L 2800 1400 L 0 1400 Z" fill="#a8e6a1" fill-opacity="0.23"/></g>
+<g class="w4"><path d="M 0 1106 q 50 -106 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 L 2800 1400 L 0 1400 Z" fill="#e6d8a8" fill-opacity="0.26"/></g>
+
+</svg>

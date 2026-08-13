@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<style>@keyframes drift0 { to { transform: translateX(-533px) } }
+.w0{animation:drift0 9s linear infinite}
+@keyframes drift1 { to { transform: translateX(-400px) } }
+.w1{animation:drift1 13s linear infinite}
+@keyframes drift2 { to { transform: translateX(-320px) } }
+.w2{animation:drift2 17s linear infinite}
+@keyframes drift3 { to { transform: translateX(-267px) } }
+.w3{animation:drift3 21s linear infinite}
+</style>
+<rect width="1600" height="900" fill="#0d0d12"/>
+<g class="w0"><path d="M 0 315 q 133.25 -42 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 t 266.5 0 L 3200 900 L 0 900 Z" fill="#e8eaf0" fill-opacity="0.15"/></g>
+<g class="w1"><path d="M 0 439 q 100 -60 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 t 200 0 L 3200 900 L 0 900 Z" fill="#8ea8ff" fill-opacity="0.18"/></g>
+<g class="w2"><path d="M 0 563 q 80 -78 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 t 160 0 L 3200 900 L 0 900 Z" fill="#f1dec0" fill-opacity="0.22"/></g>
+<g class="w3"><path d="M 0 686 q 66.75 -96 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 t 133.5 0 L 3200 900 L 0 900 Z" fill="#e8eaf0" fill-opacity="0.26"/></g>
+
+</svg>

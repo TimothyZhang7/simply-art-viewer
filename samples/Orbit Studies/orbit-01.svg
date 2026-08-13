@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<style>@keyframes spin { to { transform: rotate(360deg) } }
+.g0{animation:spin 10s linear infinite;transform-origin:600px 800px}
+.g1{animation:spin 16s linear infinite reverse;transform-origin:600px 800px}
+.g2{animation:spin 22s linear infinite;transform-origin:600px 800px}</style>
+<rect width="1200" height="1600" fill="#0b0c0f"/>
+
+<g class="g0"><circle cx="600" cy="800" r="168.0" fill="none" stroke="#f1dec0" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="4 10"/><circle cx="768.0" cy="800" r="20" fill="#f1dec0"/><circle cx="600" cy="632.0" r="9.0" fill="#f1dec0" fill-opacity="0.55"/></g>
+<g class="g1"><circle cx="600" cy="800" r="336.0" fill="none" stroke="#8ea8ff" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="7 14"/><circle cx="936.0" cy="800" r="16" fill="#8ea8ff"/><circle cx="600" cy="464.0" r="7.2" fill="#8ea8ff" fill-opacity="0.55"/></g>
+<g class="g2"><circle cx="600" cy="800" r="504.0" fill="none" stroke="#ff8f6b" stroke-opacity="0.3" stroke-width="2.5" stroke-dasharray="10 18"/><circle cx="1104.0" cy="800" r="12" fill="#ff8f6b"/><circle cx="600" cy="296.0" r="5.4" fill="#ff8f6b" fill-opacity="0.55"/></g>
+<circle cx="600" cy="800" r="50.4" fill="#f1dec0"/>
+</svg>

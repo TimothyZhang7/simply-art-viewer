@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1550" viewBox="0 0 1250 1550">
+<style>@keyframes spin { to { transform: rotate(360deg) } }
+@keyframes sway { from { transform: translateY(-38px) } to { transform: translateY(38px) } }
+.slow{animation:spin 56s linear infinite;transform-origin:625px 775px}
+.mid{animation:spin 32s linear infinite reverse;transform-origin:400px 465px}
+.sw{animation:sway 8s ease-in-out infinite alternate}</style>
+<rect width="1250" height="1550" fill="#120f14"/>
+
+<g class="slow">
+  <rect x="300" y="450" width="650" height="650" fill="none" stroke="#f5b8c4" stroke-width="12"/>
+  <rect x="462.5" y="612.5" width="325" height="325" fill="#c9a7f5" transform="rotate(35 625 775)"/>
+</g>
+<g class="mid">
+  <path d="M 175 465 a 225 225 0 0 1 450 0 Z" fill="#f1dec0"/>
+</g>
+<g class="sw">
+  <circle cx="900" cy="1116" r="137" fill="#f5b8c4"/>
+  <path d="M 225 1209 l 200 -150 l 25 250 Z" fill="#c9a7f5" fill-opacity="0.85"/>
+</g>
+</svg>
