@@ -12,7 +12,11 @@ if (!app.requestSingleInstanceLock()) {
   // Must be set before server.js is imported — it resolves paths at import.
   process.env.SAV_DESKTOP = '1';
   process.env.SAV_DATA_DIR = app.getPath('userData');
-  process.env.SAV_PORT = '0';
+  // The port must be STABLE across launches: client prefs (settings,
+  // favourites, bookmarks) live in localStorage, which is scoped to
+  // scheme+host+port — an ephemeral port would wipe them on every start.
+  // 34877 is distinct from the dev server's 4877, so both can run at once.
+  process.env.SAV_PORT = '34877';
   app.setAppUserModelId('com.simplyartviewer.desktop');
 
   const boundsPath = () => path.join(app.getPath('userData'), 'window-state.json');
@@ -20,8 +24,20 @@ if (!app.requestSingleInstanceLock()) {
 
   async function createWindow() {
     const { server } = await import('../server.js');
-    if (!server.listening) await new Promise((r) => server.once('listening', r));
-    const { port } = server.address();
+    const port = await new Promise((resolve, reject) => {
+      if (server.listening) return resolve(server.address().port);
+      server.once('listening', () => resolve(server.address().port));
+      server.once('error', (err) => {
+        // Some other software owns the stable port — fall back to an
+        // ephemeral one so the app still opens. Prefs are isolated for such
+        // a run (different origin), which beats not launching at all.
+        if (err.code === 'EADDRINUSE') {
+          server.listen(0, '127.0.0.1', () => resolve(server.address().port));
+        } else {
+          reject(err);
+        }
+      });
+    });
 
     let bounds = {};
     try {
