@@ -72,5 +72,12 @@ function route() {
   }
 }
 
+// Desktop shell (Electron): the window is frameless, so the app's own bars
+// become the drag region and pad clear of the OS window controls (see the
+// .desktop rules in style.css).
+if (navigator.userAgent.includes('Electron')) {
+  document.documentElement.classList.add('desktop');
+}
+
 window.addEventListener('hashchange', route);
 route();

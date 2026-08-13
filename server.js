@@ -16,8 +16,11 @@ import { ThumbService, snapWidth } from './lib/thumbs.js';
 
 const APP_DIR = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC_DIR = path.join(APP_DIR, 'public');
-const CACHE_DIR = path.join(APP_DIR, '.savcache');
-const CONFIG_PATH = path.join(APP_DIR, 'config.json');
+// Desktop builds run from a read-only package — config and caches go to a
+// writable data dir (SAV_DATA_DIR) instead, defaulting to the app folder.
+const DATA_DIR = process.env.SAV_DATA_DIR || APP_DIR;
+const CACHE_DIR = path.join(DATA_DIR, '.savcache');
+const CONFIG_PATH = path.join(DATA_DIR, 'config.json');
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -55,12 +58,20 @@ async function loadConfig() {
 }
 
 const config = await loadConfig();
-for (let i = 2; i < process.argv.length; i++) {
-  const a = process.argv[i];
-  if (a === '--port') config.port = Number(process.argv[++i]) || config.port;
-  else if (a === '--host') config.host = process.argv[++i] || config.host;
-  else if (!a.startsWith('--')) config.rootPath = a;
+// Inside the desktop shell argv belongs to Electron/Chromium (launcher
+// switches, file associations) — parsing it would misread stray args as a
+// library path, so CLI overrides are dev-server only.
+if (!process.env.SAV_DESKTOP) {
+  for (let i = 2; i < process.argv.length; i++) {
+    const a = process.argv[i];
+    if (a === '--port') config.port = Number(process.argv[++i]) || config.port;
+    else if (a === '--host') config.host = process.argv[++i] || config.host;
+    else if (!a.startsWith('--')) config.rootPath = a;
+  }
 }
+// The desktop shell passes 0 for an ephemeral port (the --port flag can't:
+// `Number(v) ||` treats 0 as unset).
+if (process.env.SAV_PORT !== undefined) config.port = Number(process.env.SAV_PORT) || 0;
 
 async function persistConfig() {
   await writeFile(CONFIG_PATH, JSON.stringify(config, null, 2));
@@ -420,9 +431,12 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(config.port, config.host, () => {
-  console.log(`Simply Art Viewer  →  http://${config.host}:${config.port}`);
+  console.log(`Simply Art Viewer  →  http://${config.host}:${server.address().port}`);
   console.log(config.rootPath
     ? `Library root: ${config.rootPath}`
     : 'No library root configured yet — open the app and set one in Setup.');
   if (config.rootPath) rescan();
 });
+
+// The desktop shell imports this module and waits on the listening server.
+export { server };

@@ -84,6 +84,22 @@ input:focus, select:focus { border-color: var(--accent); }
 .bar .sub { color: var(--text-dim); font-size: 12.5px; white-space: nowrap; }
 .bar .spacer { flex: 1; }
 
+/* ---- desktop shell (frameless window) ----
+   The app's bars are the title bar: draggable, with the right padding pushed
+   clear of the OS min/max/close overlay. env(titlebar-area-*) falls back to
+   the full viewport in a browser tab or in fullscreen, so the padding
+   collapses back to the normal 14px. */
+.desktop .bar,
+.desktop .rail-bar {
+  -webkit-app-region: drag;
+  padding-right: calc(100vw - env(titlebar-area-x, 0px) - env(titlebar-area-width, 100vw) + 14px);
+}
+.desktop .bar button,
+.desktop .bar input,
+.desktop .rail-bar button {
+  -webkit-app-region: no-drag;
+}
+
 .icon-btn {
   display: inline-flex;
   align-items: center;
@@ -108,49 +124,66 @@ input:focus, select:focus { border-color: var(--accent); }
 
 .wrap { padding: 18px clamp(14px, 3vw, 32px) 60px; max-width: 1700px; margin: 0 auto; }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(240px, 44vw), 1fr));
-  gap: 16px;
-}
-.col-card {
-  position: relative;
+/* Justified mosaic of collection covers (same row algorithm as .jgrid). */
+.home-grid { position: relative; }
+.htile {
+  position: absolute;
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--bg-raise);
   border: 1px solid var(--line);
   cursor: pointer;
-  transition: transform 220ms var(--ease), box-shadow 220ms, border-color 220ms;
+  transition: box-shadow 220ms, border-color 220ms;
 }
-.col-card:hover {
-  transform: translateY(-3px);
+.htile:hover {
   box-shadow: var(--shadow);
-  border-color: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.16);
 }
-.col-card .cover {
-  aspect-ratio: 4 / 3;
+/* Position transitions only while reordering (favourite toggles) — animating
+   them during window resize would fight every frame. */
+.home-grid.animate .htile {
+  transition: left 340ms var(--ease), top 340ms var(--ease),
+    width 340ms var(--ease), height 340ms var(--ease);
+}
+.htile img {
   width: 100%;
+  height: 100%;
+  display: block;
   object-fit: cover;
-  background: var(--bg-raise-2);
+  opacity: 0;
+  transition: opacity 320ms ease, transform 300ms var(--ease);
 }
-.col-card .cover-empty {
-  aspect-ratio: 4 / 3;
+.htile img.on { opacity: 1; }
+.htile:hover img { transform: scale(1.04); }
+.htile .empty {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-dim);
   background: var(--bg-raise-2);
 }
-.col-card .meta { padding: 11px 13px 12px; }
-.col-card .name {
+.htile .ovl {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 28px 13px 11px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  pointer-events: none;
+}
+.htile .ovl .name {
   font-weight: 600;
   font-size: 14.5px;
+  color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
-.col-card .count { color: var(--text-dim); font-size: 12.5px; margin-top: 2px; }
-.col-card .fav-btn {
+.htile .ovl .count { color: rgba(255, 255, 255, 0.78); font-size: 12.5px; margin-top: 1px; }
+.htile .fav-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -167,12 +200,12 @@ input:focus, select:focus { border-color: var(--accent); }
   opacity: 0;
   transition: opacity 180ms ease, transform 180ms var(--ease);
 }
-.col-card:hover .fav-btn, .col-card .fav-btn.on { opacity: 1; }
-.col-card .fav-btn:hover { transform: scale(1.1); }
-.col-card .fav-btn svg { width: 17px; height: 17px; }
-.col-card .fav-btn.on { color: #ffd166; }
-.col-card .fav-btn.on svg { fill: currentColor; }
-@media (hover: none) { .col-card .fav-btn { opacity: 1; } }
+.htile:hover .fav-btn, .htile .fav-btn.on { opacity: 1; }
+.htile .fav-btn:hover { transform: scale(1.1); }
+.htile .fav-btn svg { width: 17px; height: 17px; }
+.htile .fav-btn.on { color: #ffd166; }
+.htile .fav-btn.on svg { fill: currentColor; }
+@media (hover: none) { .htile .fav-btn { opacity: 1; } }
 
 .empty-state {
   max-width: 520px;

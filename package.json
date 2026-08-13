@@ -3,11 +3,42 @@
   "version": "1.0.0",
   "description": "Fluid local art gallery — scans folders into collections; sleek click-zone viewer and smooth rail mode.",
   "type": "module",
-  "main": "server.js",
+  "main": "desktop/main.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "app": "electron .",
+    "dist": "electron-builder --win"
   },
   "optionalDependencies": {
     "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.simplyartviewer.desktop",
+    "productName": "Simply Art Viewer",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "desktop/**",
+      "server.js",
+      "lib/**",
+      "public/**",
+      "build/icon.png"
+    ],
+    "asarUnpack": [
+      "node_modules/sharp/**",
+      "node_modules/@img/**"
+    ],
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }
