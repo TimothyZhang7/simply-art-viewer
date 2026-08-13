@@ -1,0 +1,13 @@
+{
+  "name": "simply-art-viewer",
+  "version": "1.0.0",
+  "description": "Fluid local art gallery — scans folders into collections; sleek click-zone viewer and smooth rail mode.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.34.2"
+  }
+}
