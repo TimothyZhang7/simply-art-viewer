@@ -18,6 +18,7 @@ export const session = {
   railAutoplay: false,    // start playback pattern as soon as rail mounts
   railPos: new Map(),     // collection id -> saved rail scroll position
   gridScroll: new Map(),  // collection id -> saved grid scroll position
+  homeScroll: null,       // home mosaic scroll position, restored on return
 };
 
 export async function loadState(force = false) {

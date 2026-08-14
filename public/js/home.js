@@ -2,7 +2,7 @@
 
 import * as api from './api.js';
 import { el, icons, toast, fmtCounts, clamp } from './util.js';
-import { loadState, invalidate, go } from './main.js';
+import { loadState, invalidate, go, session } from './main.js';
 import { openSheet } from './settings.js';
 import { folderBrowser } from './folderpick.js';
 import { favs } from './store.js';
@@ -85,6 +85,11 @@ export function homeView(app) {
   }
 
   async function render() {
+    // Scroll to restore after the grid rebuilds: the position saved when this
+    // view was left (back-navigation), or the live one (re-render after a
+    // rescan). Read it before the loading spinner collapses the page height.
+    const keepScroll = session.homeScroll ?? window.scrollY;
+    session.homeScroll = null;
     const loadingText = el('span', {}, 'Loading library…');
     wrap.replaceChildren(el('div', { class: 'loading' }, el('div', { class: 'spinner' }), loadingText));
     // The collections request blocks server-side while a scan runs — feed the
@@ -242,6 +247,9 @@ export function homeView(app) {
     grid.append(...tiles.map((t) => t.el));
     wrap.replaceChildren(grid);
     reorder(); // first layout — needs the grid in the DOM for clientWidth
+    // Geometry is final here (computed from scan dims, not image loads), so
+    // the restored position anchors exactly where the view was left.
+    if (keepScroll) window.scrollTo({ top: keepScroll });
 
     // Covers load after layout so each request matches its tile's real width.
     for (const t of tiles) {
@@ -268,6 +276,7 @@ export function homeView(app) {
   render();
   return () => {
     alive = false;
+    session.homeScroll = window.scrollY; // route() clears the DOM after this
     activeWatch?.();
     activeWatch = null;
     ro?.disconnect();
